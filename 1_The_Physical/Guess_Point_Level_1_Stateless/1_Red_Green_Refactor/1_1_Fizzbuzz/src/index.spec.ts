@@ -14,4 +14,8 @@ describe("fizzbuzz", () => {
     it("throws an error when input is below 1", () => {
         expect(() => fizzbuzz(0)).toThrow()
     })
+
+    it("throws an error when input is above 100", () => {
+        expect(() => fizzbuzz(101)).toThrow()
+    })
 });
