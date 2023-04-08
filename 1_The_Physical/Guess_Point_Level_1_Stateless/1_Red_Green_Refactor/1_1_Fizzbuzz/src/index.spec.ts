@@ -26,4 +26,8 @@ describe("fizzbuzz", () => {
     it("returns 'Buzz' for 5, 10, 20, 25, multiples of 5", () => {
         [5, 10, 20, 25].map((multiple) => fizzbuzz(multiple)).forEach((result) => expect(result).toEqual("Buzz"));
     })
+
+    it("returns 'FizzBuzz' for 15, 30, 45, 60, multiples of 3 & 5", () => {
+        [15, 30, 45, 60].map((commonMultiple) => fizzbuzz(commonMultiple)).forEach((result) => expect(result).toEqual("FizzBuzz"));
+    })
 });
