@@ -10,4 +10,8 @@ describe("fizzbuzz", () => {
         const nonMultiples = [1, 2, 4, 6];
         nonMultiples.map((nonMultiple) => fizzbuzz(nonMultiple)).forEach((nonMultipleString, index) => expect(nonMultipleString).toEqual(nonMultiples[index].toString()));
     })
+
+    it("throws an error when input is below 1", () => {
+        expect(() => fizzbuzz(0)).toThrow()
+    })
 });
